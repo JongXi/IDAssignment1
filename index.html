@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jing Xi's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/1ad4f44023.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class = "name"><strong>Jing Xi</strong></div>
+        <div class = "navButton"><i class="fas fa-bars"></i></div>
+        <ul class = "navMenu">
+          <li><a href ="#home">Home</a></li>
+          <li><a href ="#about">About</a></li>
+          <li><a href ="#achievements">Achievements</a></li>
+          <li><a href ="#projects">Projects</a></li>
+          <li><a href ="#work">Work Experience</a></li>
+          <li><a href ="#skills">Skills</a></li>
+          <li><a href ="#education">Education</a></li>
+          <li><a href ="#contact">Contact</a></li>
+          <div class = "closeNavButton"><i class="fas fa-times"></i></div>
+        </ul>
+    </nav>
+
+    <!-- Home Section-->
+    <section class = "home" id = "home">
+      <div class = "homeContent">
+        <h1 class = "homeText-1">Hello, I am<br> <span class = "homeTextName"><strong>Low Jing Xi</strong><span></h1>
+        <div class = "homeText-2">
+          I am an IT student studying in Ngee Ann Polytechnic
+        </div>
+      </div>
+      <img id = "mypicture" src="./Photos/My_Picture.jpeg" alt = "Picture of Jing Xi">
+    </section>
+
+    <!-- About Me Section -->
+    <section class = "about" id = "about">
+      <div class = "aboutTitle"><br><br><br><br><h1>About Me <br>-Who I am-<br><h1></div>
+      <div class = "aboutContent">
+        <p>
+          <div class = "aboutPara">I am a current student in Ngee Ann Polytechnic and studying for the diploma in Information Technology.<br><br> I play basketball for fun and represented my secondary school in some competitions in the past. I take pride in all that I do and in the long-term relationships I’ve fostered in the process. I firmly believe that hard work eventually pays off, and I know that each day brings me closer to reaching my goals. I am an open-minded and resilient guy. <br><br> I am always looking for the chance to grow and learn new things. I like learning new things and broadening my knowledge about the world thus I would love to experience new things and expand my horizons. I believe in the rising demand of technology in the future and hope that it would be used for the good. Please take the time to explore my portfolio.</div>
+        </p>
+        <img id = "potrait" src="./Photos/PotraitPicture.jpg" alt = "Potrait">
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class = "achievements" id = "achievements">
+      <div class = "achievementTitle"><br><br><br><br><h1>My Achievements<br>-What I Have Done-<h1><br></div>
+      <div class = "achievementContent">
+        <div class = "achievementYear"><strong>-2021-</strong></div>
+        <ul class = "achievementsContainer">
+          <li>Subcommittee Member in Leo Club</li>
+        </ul>
+
+        <div class = "achievementYear"><strong>-2020-</strong></div>
+        <ul class = "achievementsContainer">
+          <li>Represented School in the NUS Geography Challenge</li>
+          <li>Represented School in West Zone 'B' Division Basketball Championships</li>
+          <li>Assisted in the production of an appreciation video to thank the healthcare staff at the Methodist Welfare Servicing Hospice </li>
+        </ul>
+
+        <div class = "achievementYear"><strong>-2019-</strong></div>
+        <ul class = "achievementsContainer">
+          <li>National School Games Basketball West Zone C Division Helpers</li>
+          <li>Represented School in Active-SG BAS Basketball Developmental League 'B' Division </li>
+          <li>Represented School in West Zone 'B' Division Basketball Championships</li>
+          <li>Went to East Coast Park to create awareness about global warming to the public</li>
+        </ul>
+
+        <div class = "achievementYear"><strong>-2018-</strong></div>
+        <ul class = "achievementsContainer">
+          <li>Represented School in West Zone 'C' Division Basketball Championships</li>
+          <li>Represented School in Singapore American School Tip and Rip</li>
+          <li>Presented an activity-based lesson for an orphanage in Malacca</li>
+        </ul>
+
+        <!-- Container for the image gallery -->
+        <div class="galleryContainer">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+              <img src="./Gallery/GeographyChallenge.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="./Gallery/BasketballBDiv.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="./Gallery/BasketballCDiv.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="./Gallery/CrossCountry.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="./Gallery/MalaccaTrip.jpeg" style="width:100%">
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="./Gallery/GeographyChallenge.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Geography Challenge">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Gallery/BasketballBDiv.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Basketball B Division Team">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Gallery/BasketballCDiv.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Basketball C Division Team">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Gallery/CrossCountry.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Cross Country">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Gallery/MalaccaTrip.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Malacca Trip for Project to Help Orphans">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class = "projects" id = "projects">
+      <div class = "projectTitle"><br><br><br><br><br><h1>My Projects<br>-Work I Have Done-<h1><br></div>
+      <div class = "projectContainer">
+        <div class = "projectContainerDP">
+          <div class = "projectDP">
+            <p><div = "projectContent">
+              I redesigned the Spotify logo using Adobe Illustrator as there are a few problems with it. Firstly, it does not immediately tell me that this logo is representing music. Secondly, the waves on the logo are tilted to the right side. This has been acknowledged by Spotify however they refuse to change it. Thirdly, the logo looks bland and commonly seen everywhere. The three waves can be seen in other places like WiFi.
+            </div><p>
+          </div>
+        </div>
+
+        <div class = "projectContainerIMP">
+          <div class = "projectIMP">
+            <p><div = "projectContent">
+              My team and I created a website using Wix.com for iausdiuabsd ibwabisdi wasbdiw absd iubwa isiudbw kabsj diwuai ubsdiwiasl dlabsd lbwaibsd biabsiubdi uwbaiusbdiu baiwbdi asb dibwaiu bsiudb wiau biub   
+            </div><p> 
+          </div>
+        </div>
+        
+        <div class = "projectContainerCSF">
+          <div class = "projectCSF">
+            <p><div = "projectContent">
+              My team and I created a website using Wix.com to showcase our knowledge about cybersecurity. We made this website about a recent cyberattack called the Ryuk Ransomware where they 
+            </div><p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class = "work" id = "work">
+      <div class = "workTitle"><br><br><br><br><br><br><h1>Work Experience<br>-My Past Jobs-<h1><br></div>
+      <div class = "workContent">
+        <div class = "workYear">December 2020 - February 2021</div>
+        <div class = "workPosition"><strong>Assembly Support, Makino Asia</strong></div>
+        <div class = "workDescription">
+          <p>
+            I joined Makino Asia and worked part-time during the holidays after completing my O-Levels. I went through training for basic safety procedures in a factory. I also learnt how their machines and factories operated through observing the technicians and operators work. I forged great friendships and Makino. I worked on many different types of machines that are sold in Makino Asia. <br>I carried out various tasks in providing support for the technicians and operators there such as:
+            <ul>
+              <li>Carrying and moving heavy products</li>
+              <li>Assembling and disassembling machine covers</li>
+              <li>Packing machine covers that were ready to be transported</li>
+              <li>Cleaning the machine's exterior and interior</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class = "skills" id = "skills">
+      <div class = "skillTitle"><br><br><br><br><br><br><h1>My Skills<br>-Competence & Aptitude-<h1></div>
+      <div class = "skillContent">
+        <div class = "softSkills">
+          <div class = skillIcon><i class="fas fa-cog"></i></div>
+          <div class = "softSkillsHeader"><strong>Soft Skills<br><br></strong></div>
+          <div class = "skillDescription">
+            <div class = "skillTitle1"><b>Communication</b></div>
+            <div class = "skillParagraph">
+              <p>
+                sakdw ibibi bb ib ibbb hbhb biubjbkb bbjbkbiub jbkjbkjbibjbkj bkjbkbkbkbkjbkb kbkjb kjbkj bkbj kb kb o bbsd basibdb waib isbdiwab isbd iwabsbd wbaisudbi wbasjbdiwab sdbw oabosdbow baosdbwoa bsodb asjdbjsj absbdjwbabdjb wabsjdb wabs dbwba sbd kba<br><br>
+              </p>
+            </div>
+
+            <div class = "skillTitle1"><b>Leadership</b></div>
+            <div class = "skillParagraph">
+              <p>
+                sakdw ibibi bb ib ibbb hbhb biubjbkb bbjbkbiub jbkjbkjbibjbkj bkjbkbkbkbkjbkb kbkjb kjbkj bkbj kb kb o bbsd basibdb waib isbdiwab isbd iwabsbd wbaisudbi wbasjbdiwab sdbw oabosdbow baosdbwoa bsodb asjdbjsj absbdjwbabdjb wabsjdb wabs dbwba sbd kba
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class = "technicalSkills">
+          <div class = skillIcon><i class="fas fa-comments"></i></div>
+          <div class = "technicalSkillsHeader"><strong>Technical Skills<br><br></strong></div>
+          <div class = "skillDescription">
+            <div class = "skillTitle1"><b>Factory Skills</b></div>
+            <div class = "skillParagraph">
+              <p>
+                sakdw ibibi bb ib ibbb hbhb biubjbkb bbjbkbiub jbkjbkjbibjbkj bkjbkbkbkbkjbkb kbkjb kjbkj bkbj kb kb o bbsd basibdb waib isbdiwab isbd iwabsbd wbaisudbi wbasjbdiwab sdbw oabosdbow baosdbwoa bsodb asjdbjsj absbdjwbabdjb wabsjdb wabs dbwba sbd kba
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class = "education" id = "education">
+      <div class = "educationTitle"><br><br><br><br><br><h1>Educational History<br>-My Learning Journey-<h1><br></div>
+      <div class = "educationContent">
+        <div class = "educationContainer">
+          <div class = "educationYear">2021 - 2023</div>
+          <div class = "educationSchool"><strong>Information Technology, Ngee Ann PolyTechnic</strong></div>
+          <div class = "educationDescription">
+            <p>
+              I am currently studying at Ngee Ann Polytechnic for a diploma in Information Technology. I am a subcommittee member of Leo Club which is a community service club, as a subcommittee member, I have planned activites and events and I have been a GL for multiple community service events. I am trying to expand my horizons and gain more experience through events and learning brand new things. I am also trying to grow my connections and expand my network. I am excited to learn new things in Ngee Ann Polytechnic.
+            </p>
+          </div>
+        </div>
+        <div class = "educationYear">2017 - 2020</div>
+          <div class = "educationSchool"><strong>New Town Secondary School</strong></div>
+          <div class = "educationDescription">
+            <p>
+              I was previously a student at New Town Secondary School and received my Singapore-Cambridge General Certificate of Education Ordinary Level while forging great relationships with both schoolmates and teachers. I took subjects like Pure Biology and Pure Chemistry that helped me broaden my knowledge about the world of science. I represented my school in various events such as basketball competitions and the NUS Geography Challenge. I also contributed to the community through various Values-In-Action (VIA) Activities.
+            </p>
+          </div>
+        </div>
+        <div class = "educationYear">2011 - 2016</div>
+          <div class = "educationSchool"><strong>Princess Elizabeth Primary School</strong></div>
+          <div class = "educationDescription">
+            <p>
+              I was previously a student in Princess Elizabeth Primary School. I forged great friendships with my classmates and form teachers that are still intact in the present day. I participated in a chess competition and in various events too.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class = "contact" id = "contact">
+      <div class = "contactTitle"><br><br><br><br><br><h1>Contact Me<br>-Get in touch with me-<h1></div>
+      <div class = "contactContent">
+        <div class = "contactInfo">
+          <div class = "contactName">
+            <h3><i class="fas fa-user-alt"></i>Name</h3>
+            <p><strong>Low Jing Xi</strong></p>
+          </div>
+          <div class = "contactEmail">
+            <h3><i class="fas fa-envelope"></i>Email</h3>
+            <p><strong>s10223779@connect.np.edu.sg</strong></p>
+          </div>
+          <div class  = "contactNumber">
+            <h3><i class="fas fa-phone-alt"></i>Phone</h3>
+            <p><strong>12345678</strong></p>
+          </div>
+        </div>
+        <div class = "contactForm">
+          <form id="my-form" action="https://formspree.io/f/myyogaee" method="POST">
+            <div class = "contactFormTitle"><h1>Send Message<h1></div>
+
+            <div class = "contactFormName">
+              Full Name<input type="text" required="required"><br><br>
+            </div>
+
+            <div class = "contactFormEmail">
+              Email<input type="email" required = "required"><br><br>
+            </div>
+
+            <div class = "contactFormMsg">
+              Type Your Message<textarea cols = "30" rows = "10" required = "required">
+              </textarea><br><br>
+            </div>
+            <div class = "contactButton">
+              <input type = "submit" value = "Send">
+              <p id="my-form-status"></p>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
